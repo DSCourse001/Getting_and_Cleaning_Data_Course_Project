@@ -1,5 +1,5 @@
 # Script will produce "tidy_data.txt" file with tidy data from source.
-# Source Data neet to be downloaded from the URL:
+# Source Data need to be downloaded from the URL:
 #   https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 # 
 # After that you should extract archive to R Working Directory.
@@ -11,8 +11,8 @@
 # You can use it for further analysis or remove.
 #
 # If you have Source Data in directory then this script should run 
-# neally 3-5 seconds on modern desctop PC (2015 year). This is mainly beacause of 
-# use "data.table" and "LaF" packages. 
+# nearly 3-5 seconds on modern desktop PC (2015 year). This is mainly because of 
+# use "data.table" and "LaF" packages.
 # 
 
 # Install Required Packages if we cannot load it
@@ -57,7 +57,7 @@ test<-testlaf[,]
 close(testlaf)
 setnames(test,1:ncol(test),ftrLab$ColName)
 
-# Loading smal files
+# Loading small files
 test$Activity<-read.table("./UCI HAR Dataset/test/Y_test.txt",header=F,colClasses="numeric")[,1]
 test$Subject<-read.table("./UCI HAR Dataset/test/subject_test.txt",header=F,colClasses="numeric")[,1]
 
