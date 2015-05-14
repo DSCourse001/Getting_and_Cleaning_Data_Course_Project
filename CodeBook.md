@@ -1,6 +1,6 @@
 ## Code Book
 ### Description
-The goal of this document is to describe source data, parameters and the steps that performed to clear up that data. This document is a part of a set of documents for "Getting and Cleaning Data" Course Project. Please reference to the root document for this set - [README](README.md)
+The goal of this document is to describe source data, parameters and the steps that performed to clear up that data. This document is a part of a set of documents for "Getting and Cleaning Data" Course Project. Please reference to the root document for this set - [README.md](README.md)
 
 ### Source Data
 Companies like Fitbit, Nike, and Jawbone Up are racing to develop the most advanced algorithms to attract new users. The data linked to from the course website represent data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained:
