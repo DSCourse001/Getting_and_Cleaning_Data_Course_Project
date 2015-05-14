@@ -1,6 +1,6 @@
 ## Code Book
 ### Description
-The goal of this document is a describe source data, parameters and the steps that performed to clear data. This document is a part of a set of documents for "Getting and Cleaning Data" Course Project. Please reference to the root document for this set - [README](README.md)
+The goal of this document is to describe source data, parameters and the steps that performed to clear up that data. This document is a part of a set of documents for "Getting and Cleaning Data" Course Project. Please reference to the root document for this set - [README](README.md)
 
 ### Source Data
 Companies like Fitbit, Nike, and Jawbone Up are racing to develop the most advanced algorithms to attract new users. The data linked to from the course website represent data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained:
@@ -9,7 +9,7 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 Source Data is obtained from the following URL:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-In the Archive you can find README.txt with description about what file what data contains.
+In the ZIP archive you can find README.txt with description of all files of a Source Data.
 
 [run_analysis.R] (run_analysis.R) R Program uses only the following files:
 
@@ -35,7 +35,7 @@ This script does the following:
 1. Appropriately labels the data set with descriptive variable names. 
 1. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-Furthermore this script can install required R Packages and Download source data from the URL if it is not exists in the folder "UCI HAR Dataset" under your Working Directory in R.
+Furthermore this script can install required R Packages and Download Source Sata from the URL if it is not exists in the folder "UCI HAR Dataset" under your Working Directory in R.
 
 ### Results
 After you run [run_analysis.R] (run_analysis.R) R Script it will produce "tidy_data.txt" file with a Data from "tidy_data" data.table. "tidy_data" data.table will be held in memory.
@@ -117,4 +117,4 @@ Classes 'grouped_dt', 'tbl_dt', 'tbl', 'tbl_dt', 'tbl', 'data.table' and 'data.f
 ```
 
 ### Technical Information
-[run_analysis.R] (run_analysis.R) script uses "data.table" and "LaF" package for performance consideration. On laptop (Windows 7 x86 64bit, Intel Core i3, 8GB RAM, 7200 rpm HDD) it runs nearly 3-4 seconds. But  this only if you have prepared Source Data or running [run_analysis.R] (run_analysis.R) R Script not in first time.
+[run_analysis.R] (run_analysis.R) script uses "data.table","dplyr" and "LaF" packages for performance consideration. On laptop (Windows 7 x86 64bit, Intel Core i3, 8GB RAM, 7200 rpm HDD) it runs nearly 3-4 seconds. But  this only if you have prepared Source Data.
