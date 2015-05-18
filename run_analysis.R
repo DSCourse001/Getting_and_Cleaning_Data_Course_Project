@@ -86,14 +86,15 @@ rm(actLab)
 
 # Step 4. Appropriately labels the data set with descriptive variable names.
 data$Subject<-factor(data$Subject)
+setnames(data,1:length(data),tolower(gsub("[-\\(\\)]","",names(data))))
 
 # Step 5. From the data set in step 4, creates a second, independent tidy data 
 #     set with the average of each variable for each activity and each subject.
 
 # Set Grouping Element and Order by Grouping Element
 data <- data %>% 
-  group_by(Activity,Subject) %>%
-    arrange(Activity,Subject)  
+  group_by(activity,subject) %>%
+    arrange(activity,subject)  
 
 # Getting Average for each column by group
 tidy_data<-summarise_each(data,funs(mean))
